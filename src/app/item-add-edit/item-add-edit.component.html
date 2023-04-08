@@ -1,0 +1,57 @@
+<div mat-dialog-title>
+    <h1>Items Add Form</h1>
+</div>
+<form [formGroup]="itemForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Item title</mat-label>
+                <input matInput type="text" placeholder="Ex. Biscuits" formControlName="itemTitle">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field class="example-full-width">
+                <mat-label>Item Description</mat-label>
+                <textarea matInput placeholder="Ex. About Item" formControlName="itemDesc"></textarea>
+            </mat-form-field>
+        </div>
+
+        
+        <div class="row">
+            <!--Dropdown-->
+            <mat-form-field appearance="outline">
+                <mat-label>Item Category</mat-label>
+                <mat-select formControlName="category">
+                <mat-option *ngFor ="let val of category" [value]="val">{{val}}
+                </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <!--Currency-->
+            <mat-form-field appearance="outline">
+                <mat-label>Price</mat-label>
+                <input matInput type="number" placeholder="Ex. Rs.50,000"  formControlName="price">
+            </mat-form-field>
+        </div>
+
+        <!--Date Picker-->
+        <div class="row">
+            <mat-form-field appearance="fill" class="example-form-field">
+                <mat-label>Choose a Date</mat-label>
+                <input matInput [matDatepicker]="datepicker" formControlName="date">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="datepicker"></mat-datepicker-toggle>
+                <mat-datepicker #datepicker>
+                <mat-datepicker-actions>
+                    <button mat-button matDatepickerCancel>Cancel</button>
+                    <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+                </mat-datepicker-actions>
+                </mat-datepicker>
+            </mat-form-field>
+            </div>
+    </div>
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button type="button" type="button" [mat-dialog-close]="false">Cancel</button>   
+        <button mat-raised-button color="primary" type="submit">{{data ? 'Update' : 'Save'}}</button>   
+
+    </div>
+</form>
