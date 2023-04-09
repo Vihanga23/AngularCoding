@@ -1,16 +1,19 @@
 <mat-toolbar color="primary">
   <span>Angular Coding</span>
   <span class="example-spacer"></span>
-  <button mat-raised-button (click)="openAddEditItemForm()">Add items</button>
+  
   </mat-toolbar>
 
   <div class="main-body">
     
-    <mat-form-field>
+    <mat-form-field class="filter">
       <mat-label>Filter</mat-label>
       <input matInput (keyup)="applyFilter($event)" placeholder="Ex. phone" #input>
     </mat-form-field>
     
+    <button mat-raised-button (click)="openAddEditItemForm()">Add items</button>
+    <button mat-raised-button (click)="printThisPage()" class="print">Print this Page</button>
+
     <div class="table-container">
       <table mat-table [dataSource]="dataSource" matSort>
     
@@ -31,6 +34,12 @@
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Item Description </th>
           <td mat-cell *matCellDef="let row"> {{row.itemDesc}} </td>
         </ng-container>
+
+        <!-- Country Column -->
+        <ng-container matColumnDef="country">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Country </th>
+          <td mat-cell *matCellDef="let row"> {{row.country}} </td>
+        </ng-container>
         
         <!-- Date Column -->
         <ng-container matColumnDef="date">
@@ -50,9 +59,9 @@
           <td mat-cell *matCellDef="let row"> {{row.category}} </td>
         </ng-container>
 
-        <!-- Category Column -->
+        <!-- Action Column -->
         <ng-container matColumnDef="action">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header class="action" > Action </th>
           <td mat-cell *matCellDef="let row"> 
             <button mat-icon-button (click)="openEditItemForm(row)">
               <mat-icon>edit</mat-icon>
@@ -66,12 +75,8 @@
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     
-        <!-- Row shown when there is no matching data. -->
-        <tr class="mat-row" *matNoDataRow>
-          <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
-        </tr>
       </table>
     
-      <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+      <mat-paginator [pageSizeOptions]="[25, 50, 25, 100]" aria-label="Select page of users" class="paginator"></mat-paginator>
     </div>
 </div>

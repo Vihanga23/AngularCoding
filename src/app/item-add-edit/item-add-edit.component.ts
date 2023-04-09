@@ -1,8 +1,10 @@
 import { Component ,OnInit, Inject} from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { ItemService } from '../services/item.service';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { CoreService } from '../core/core.service';
+import { Observable } from 'rxjs';
+import {map, startWith} from 'rxjs/operators';
 
 @Component({
   selector: 'app-item-add-edit',
@@ -11,13 +13,17 @@ import { CoreService } from '../core/core.service';
 })
 export class ItemAddEditComponent implements OnInit {
 
+  myControl = new FormControl('');
+  options: string[] = ['Sri Lanka','United States', 'Australia', 'United Kingdom', 'India', 'South Africa', 'Japan', 'Canada'];
+  filteredOptions!: Observable<string[]>;
+
   itemForm: FormGroup;
   
   category: string[] = [
     'Food',
     'Electronic',
     'Furniture',
-    'Equipments'
+    'Equipments',
   ];
 
   constructor(
@@ -34,11 +40,16 @@ export class ItemAddEditComponent implements OnInit {
       category: '',
       price: '',
       date: '',
+      country:'',
     })
   }
 
   ngOnInit(): void {
     this.itemForm.patchValue(this.data)
+    this.filteredOptions = this.myControl.valueChanges.pipe(
+      startWith(''),
+      map(value => this._filter(value || '')),
+    );
   }
 
   onFormSubmit(){
@@ -70,6 +81,11 @@ export class ItemAddEditComponent implements OnInit {
       }
       
     }
+  }
+  private _filter(value: string): string[] {
+    const filterValue = value.toLowerCase();
+
+    return this.options.filter(option => option.toLowerCase().includes(filterValue));
   }
 
 }

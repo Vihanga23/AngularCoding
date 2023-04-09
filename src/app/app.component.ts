@@ -14,11 +14,14 @@ import { DialogserviceService } from './confirmDialogService/dialogservice.servi
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  title = 'AngularTest';
+
 
   displayedColumns: string[] = [
    'id',
    'itemTitle', 
-   'itemDesc', 
+   'itemDesc',
+   'country', 
    'date', 
    'price', 
    'category',
@@ -103,5 +106,9 @@ export class AppComponent implements OnInit {
     },
   });
     
+  }
+
+  printThisPage(){
+    window.print();
   }
 }

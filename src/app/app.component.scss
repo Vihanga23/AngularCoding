@@ -7,3 +7,45 @@
     margin: 0 auto;
     max-width: 1248px;   
 }
+.print{
+  margin: 15px;
+}
+@media print {
+  button{
+      display: none;
+  }
+
+  .paginator{
+    display: none;
+  }
+  .action{
+    display: none;
+  }
+  .filter{
+    display: none;
+  }
+  title{
+    display: none;
+  }
+  @page {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  body  {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td, th {
+  width: 25%;
+}
