@@ -1,7 +1,16 @@
-.example-spacer {
+.navbar{
+  background-color: 	#097969;
+  color: bisque;
+  
+}
+
+.spacer {
     flex: 1 1 auto;
   }
 
+.editButton{
+    color: #097969  ;
+  }
 .main-body{
     padding-top: 20px;
     margin: 0 auto;
@@ -46,6 +55,13 @@ table {
   width: 100%;
 }
 
-td, th {
-  width: 25%;
+
+.header{
+  background-color:#AFE1AF  ;
+}
+.pri{
+  text-align:right ;
+}
+.datepicker{
+  text-align: right;
 }

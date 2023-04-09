@@ -35,139 +35,31 @@
       "id": 4
     },
     {
-      "itemTitle": "",
-      "itemDesc": "",
-      "category": "",
-      "price": "",
-      "date": "",
+      "itemTitle": "apple",
+      "itemDesc": "100g",
+      "category": "Food",
+      "price": 100,
+      "date": "2023-04-21T18:30:00.000Z",
       "country": "",
       "id": 5
     },
     {
-      "itemTitle": "",
-      "itemDesc": "",
-      "category": "",
-      "price": "",
-      "date": "",
-      "country": "Sri Lanka",
-      "id": 6
-    },
-    {
-      "itemTitle": "",
-      "itemDesc": "",
-      "category": "",
-      "price": "",
-      "date": "",
-      "country": "",
-      "id": 7
-    },
-    {
-      "itemTitle": "",
-      "itemDesc": "",
-      "category": "",
-      "price": "",
-      "date": "",
-      "country": "",
-      "id": 8
-    },
-    {
-      "itemTitle": "",
-      "itemDesc": "",
-      "category": "",
-      "price": "",
-      "date": "",
-      "country": "",
-      "id": 9
-    },
-    {
-      "itemTitle": "",
-      "itemDesc": "",
-      "category": "",
-      "price": "",
-      "date": "",
-      "country": "",
+      "itemTitle": "orange",
+      "itemDesc": "500g",
+      "category": "Electronic",
+      "price": 22,
+      "date": "2023-04-27T18:30:00.000Z",
+      "country": "United States",
       "id": 10
     },
     {
-      "itemTitle": "",
-      "itemDesc": "",
-      "category": "",
-      "price": "",
-      "date": "",
-      "country": "Sri Lanka",
-      "id": 11
-    },
-    {
-      "itemTitle": "",
-      "itemDesc": "",
-      "category": "",
-      "price": "",
-      "date": "",
-      "country": "",
-      "id": 12
-    },
-    {
-      "itemTitle": "",
-      "itemDesc": "",
-      "category": "",
-      "price": "",
-      "date": "",
-      "country": "",
-      "id": 13
-    },
-    {
-      "itemTitle": "",
-      "itemDesc": "",
-      "category": "",
-      "price": "",
-      "date": "",
-      "country": "",
-      "id": 14
-    },
-    {
-      "itemTitle": "",
-      "itemDesc": "",
+      "itemTitle": "dfd",
+      "itemDesc": "dfd",
       "category": "Food",
-      "price": "",
-      "date": "",
+      "price": 32,
+      "date": "2023-04-26T18:30:00.000Z",
       "country": "",
-      "id": 15
-    },
-    {
-      "itemTitle": "",
-      "itemDesc": "",
-      "category": "Furniture",
-      "price": "",
-      "date": "",
-      "country": "",
-      "id": 16
-    },
-    {
-      "itemTitle": "",
-      "itemDesc": "",
-      "category": "",
-      "price": "",
-      "date": "",
-      "country": "",
-      "id": 17
-    },
-    {
-      "itemTitle": "",
-      "itemDesc": "",
-      "category": "",
-      "price": "",
-      "date": "",
-      "country": "",
-      "id": 18
-    },
-    {
-      "itemTitle": "",
-      "itemDesc": "",
-      "category": "Furniture",
-      "price": "",
-      "date": "",
-      "country": "",
-      "id": 19
+      "id": 11
     }
   ]
 }

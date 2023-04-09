@@ -14,17 +14,17 @@ import { DialogserviceService } from './confirmDialogService/dialogservice.servi
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'AngularTest';
+  title = 'Green Coding';
 
 
   displayedColumns: string[] = [
    'id',
    'itemTitle', 
    'itemDesc',
-   'country', 
+   'country',
+   'category', 
    'date', 
    'price', 
-   'category',
    'action'
   ];
   dataSource!: MatTableDataSource<any>;
