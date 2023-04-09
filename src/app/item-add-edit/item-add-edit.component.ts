@@ -6,16 +6,16 @@ import { CoreService } from '../core/core.service';
 import { Observable } from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 
+export interface User {
+  name: string;
+}
+
 @Component({
   selector: 'app-item-add-edit',
   templateUrl: './item-add-edit.component.html',
   styleUrls: ['./item-add-edit.component.scss']
 })
 export class ItemAddEditComponent implements OnInit {
-
-  myControl = new FormControl('');
-  options: string[] = ['Sri Lanka','United States', 'Australia', 'United Kingdom', 'India', 'South Africa', 'Japan', 'Canada'];
-  filteredOptions!: Observable<string[]>;
 
   itemForm: FormGroup;
   
@@ -24,6 +24,7 @@ export class ItemAddEditComponent implements OnInit {
     'Electronic',
     'Furniture',
     'Equipments',
+    'Vehicles'
   ];
 
   constructor(
@@ -44,6 +45,10 @@ export class ItemAddEditComponent implements OnInit {
     })
   }
 
+  myControl = new FormControl('');
+  options: string[] = ['Sri Lanka','United States', 'Australia', 'United Kingdom', 'India', 'South Africa', 'Japan', 'Canada'];
+  filteredOptions!: Observable<string[]>;
+
   ngOnInit(): void {
     this.itemForm.patchValue(this.data)
     this.filteredOptions = this.myControl.valueChanges.pipe(
@@ -51,6 +56,13 @@ export class ItemAddEditComponent implements OnInit {
       map(value => this._filter(value || '')),
     );
   }
+
+  private _filter(value: string): string[] {
+    const filterValue = value.toLowerCase();
+
+    return this.options.filter(option => option.toLowerCase().includes(filterValue));
+  }
+
 
   onFormSubmit(){
     if(this.itemForm.valid) {
@@ -81,11 +93,6 @@ export class ItemAddEditComponent implements OnInit {
       }
       
     }
-  }
-  private _filter(value: string): string[] {
-    const filterValue = value.toLowerCase();
-
-    return this.options.filter(option => option.toLowerCase().includes(filterValue));
   }
 
 }

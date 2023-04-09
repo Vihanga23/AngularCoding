@@ -18,48 +18,175 @@
   },
   "items": [
     {
-      "itemTitle": "computer",
-      "itemDesc": "shh",
-      "category": "Electronic",
-      "price": 5000,
-      "date": "2023-04-20T18:30:00.000Z",
+      "itemTitle": "Banana",
+      "itemDesc": "Banana - Ambul\nRs 340.00 / KG",
+      "category": "Food",
+      "price": 3,
+      "date": "2023-04-27T18:30:00.000Z",
+      "country": "Australia",
+      "id": 1
+    },
+    {
+      "itemTitle": "T/Paste",
+      "itemDesc": "Signal T/Paste Strong Teeth 160g",
+      "category": "Food",
+      "price": 2,
+      "date": "2023-04-27T18:30:00.000Z",
+      "country": "United Kingdom",
+      "id": 2
+    },
+    {
+      "itemTitle": "Chicken ",
+      "itemDesc": "Chicken Whole Legs Skinless",
+      "category": "Food",
+      "price": 10,
+      "date": "2023-04-28T18:30:00.000Z",
+      "country": "Australia",
       "id": 3
     },
     {
-      "itemTitle": "Phone",
-      "itemDesc": "Iphone X",
-      "category": "Electronic",
-      "price": 25000,
-      "date": "2023-04-21T18:30:00.000Z",
-      "country": "",
+      "itemTitle": "Drinks",
+      "itemDesc": "Eh Necto 1.5L",
+      "category": "Food",
+      "price": 1,
+      "date": "2023-04-19T18:30:00.000Z",
+      "country": "United Kingdom",
       "id": 4
     },
     {
-      "itemTitle": "apple",
-      "itemDesc": "100g",
+      "itemTitle": "Fishery ",
+      "itemDesc": "365 by Whole Foods Market",
       "category": "Food",
-      "price": 100,
-      "date": "2023-04-21T18:30:00.000Z",
-      "country": "",
+      "price": 23,
+      "date": "2023-04-27T18:30:00.000Z",
+      "country": "Canada",
       "id": 5
     },
     {
-      "itemTitle": "orange",
-      "itemDesc": "500g",
-      "category": "Electronic",
-      "price": 22,
+      "itemTitle": "Apple",
+      "itemDesc": "Produce Organic Honeycrisp Apples, 1 Each",
+      "category": "Food",
+      "price": 3,
       "date": "2023-04-27T18:30:00.000Z",
       "country": "United States",
+      "id": 6
+    },
+    {
+      "itemTitle": "Avocado",
+      "itemDesc": "Medium Hass Avocado",
+      "category": "Food",
+      "price": 1.29,
+      "date": "2023-04-20T18:30:00.000Z",
+      "country": "United States",
+      "id": 7
+    },
+    {
+      "itemTitle": "Vegetables",
+      "itemDesc": "Organic Broccoli",
+      "category": "Food",
+      "price": 3.69,
+      "date": "2023-04-27T18:30:00.000Z",
+      "country": "United States",
+      "id": 8
+    },
+    {
+      "itemTitle": "Headphones",
+      "itemDesc": "JBL Tune 130NC TWS True Wireless",
+      "category": "Electronic",
+      "price": 109,
+      "date": "2023-04-28T18:30:00.000Z",
+      "country": "United States",
+      "id": 9
+    },
+    {
+      "itemTitle": "SanDisk 1TB Extreme",
+      "itemDesc": "SanDisk 1TB Extreme microSDXC UHS-I Memory Card",
+      "category": "Electronic",
+      "price": 118,
+      "date": "2023-04-20T18:30:00.000Z",
+      "country": "United Kingdom",
       "id": 10
     },
     {
-      "itemTitle": "dfd",
-      "itemDesc": "dfd",
-      "category": "Food",
-      "price": 32,
-      "date": "2023-04-26T18:30:00.000Z",
-      "country": "",
+      "itemTitle": "Computers & Tablets",
+      "itemDesc": "ZONKO 2 in 1 Tablet 10 inch Android 11",
+      "category": "Electronic",
+      "price": 199.99,
+      "date": "2023-04-20T18:30:00.000Z",
+      "country": "Japan",
       "id": 11
+    },
+    {
+      "itemTitle": "Car",
+      "itemDesc": "Mahindra XUV700",
+      "category": "Vehicles",
+      "price": 30000,
+      "date": "2023-04-26T18:30:00.000Z",
+      "country": "India",
+      "id": 12
+    },
+    {
+      "itemTitle": "Car",
+      "itemDesc": "Maruti Suzuki Alto 800\n",
+      "category": "Vehicles",
+      "price": 10000,
+      "date": "2023-04-25T18:30:00.000Z",
+      "country": "India",
+      "id": 13
+    },
+    {
+      "itemTitle": "Monitor",
+      "itemDesc": "24 Inch Computer Monitor Full HD 1920 x 1080p",
+      "category": "Electronic",
+      "price": 96.34,
+      "date": "2023-04-26T18:30:00.000Z",
+      "country": "Japan",
+      "id": 14
+    },
+    {
+      "itemTitle": "Monitor",
+      "itemDesc": "Acer 21.5 Inch Full HD (1920 x 1080) IPS",
+      "category": "Electronic",
+      "price": 89.99,
+      "date": "2023-04-18T18:30:00.000Z",
+      "country": "Canada",
+      "id": 15
+    },
+    {
+      "itemTitle": "Phones",
+      "itemDesc": "Desktop Wired Phones, Desktop Fixed Phones",
+      "category": "Equipments",
+      "price": 16.99,
+      "date": "2023-04-26T18:30:00.000Z",
+      "country": "South Africa",
+      "id": 16
+    },
+    {
+      "itemTitle": "Calculator",
+      "itemDesc": "Texas Instruments TI-84 Plus CE Color Graphing Calculator",
+      "category": "Equipments",
+      "price": 117.5,
+      "date": "2023-04-27T18:30:00.000Z",
+      "country": "South Africa",
+      "id": 17
+    },
+    {
+      "itemTitle": "Cartridge ",
+      "itemDesc": "HP 65 Black Ink Cartridge | Works with HP AMP 100 Series",
+      "category": "Equipments",
+      "price": 16.89,
+      "date": "2023-04-26T18:30:00.000Z",
+      "country": "South Africa",
+      "id": 18
+    },
+    {
+      "itemTitle": "Shredder",
+      "itemDesc": "Amazon Basics 8-Sheet Cross Cut Paper Shredder ",
+      "category": "Equipments",
+      "price": 51.03,
+      "date": "2023-04-08T18:30:00.000Z",
+      "country": "South Africa",
+      "id": 19
     }
   ]
 }
